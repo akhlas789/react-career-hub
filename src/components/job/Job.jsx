@@ -19,7 +19,9 @@ const Job = ({ job }) => {
                         <h2 className="flex"><HiCurrencyDollar className="text-2xl"></HiCurrencyDollar>{job.salary}</h2>
                     </div>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary">View Details</button>
+                        <link to={`/job/${job.id}`}>
+                            <button className="btn btn-primary">View Details</button>
+                        </link>
                     </div>
                 </div>
             </div>
